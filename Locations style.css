@@ -57,6 +57,7 @@ h3 {
     width: 40%;
     height: auto;
     padding: 10px;
+    object-fit: contain;
 }
 
 iframe {
