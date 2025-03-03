@@ -1,37 +1,18 @@
-@media screen and (max-width: 768px) {
-
-	table {
-	display: block;
+table {
     width: 100%;
     margin: auto;
     border-collapse: separate;
     border-spacing: 0 20px;
-	}
+}
 
-    tr {
-    display: block;
-    width: 100%;
-    }
-
-	td {
+td {
     height: auto;
-	display: block;
-    width: 100%;
-	text-align: center;
+    width: 50%;
     overflow: hidden;
     background-color: #6bb9cc;
     margin-bottom: 20px;
     vertical-align: top;
     color: white;
-	}
-	
-	.maps {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    object-fit: contain;
-	}
-	
 }
 
 img {
@@ -72,7 +53,12 @@ h3 {
     padding: 10px;
 }
 
-
+.maps {
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    object-fit: contain;
+}
 
 iframe {
     width: 100%;
