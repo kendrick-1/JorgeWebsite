@@ -1,191 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Reviews</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-
-        .header {
-    background-color: #6bb9cc;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    height: 70px;
-}
-
-.header img {
-    width: 70px;
-    height: 70px;
-}
-
-.header .L-Line, .header .R-Line {
-  width: 500px;
-  height: 150px;
-  margin: 0 auto;
-  overflow-y: hidden;
-}
-
-.sidenav {
-    height: 100%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0;
-    left: 0;
-    background-color: #111; 
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-
-.footer {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #6bb9cc;
-    color: white;
-    text-align: center;
-    clear: both;
-}
-
-.title {
-    width: 30%;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    object-fit: contain;
-    
-    margin: 0 auto;
-    display: flex;
-}
-
-.title h1 {
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #d28e3f;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.title img {
-    width: 100%;
-    height: auto;
-}
-
-        .section {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .white-bg {
-            background-color: white;
-        }
-
-        .flip-card-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px; /* Space between cards */
-            background-color: white;
-            padding: 40px 0;
-            flex-wrap: nowrap;
-        }
-
-        .card {
-            background-color: #fff;
-            width: 280px;
-            height: 350px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
-            border: 1px solid black;
-            border-radius: 12px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow effect */
-        }
-
-        .card:hover {
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Bigger shadow on hover */
-        }
-
-        .card img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            border: 3px solid white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .card p {
-            font-size: 18px;
-            color: #333;
-            margin: 10px 0;
-        }
-
-        .satisfaction-text {
-            font-size: 48px;
-            color: #d1e5f4;
-            margin-top: -15px;
-            font-weight: bold;
-        }
-
-        .star-rating {
-            font-size: 30px;
-            color: #ff9900;
-        }
-
-        .review-description {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 18px;
-            line-height: 1.5;
-            color: #333;
-        }
-    </style>
+  <title>Customer Reviews</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="JCS Template.css">
+  <link rel="stylesheet" href="Review style.css">
 </head>
 <body>
-
-
     <div class="header">
         <div onclick="openNav()" style="cursor: pointer;">
             <img src="Menu Icon.png" alt="Menu Icon" style="margin-left: 10px;">
@@ -195,7 +20,7 @@
         <img src="Right Line.png" alt="Right Line" class="R-Line">
         <img src="Profile Icon.png" alt="Profile Icon" style="margin-right: 10px;">
     </div>
-      
+    
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="Home.html">Home</a>
@@ -270,10 +95,18 @@ Customer Reviews        </p>
         </div>
     </footer>
     
-    
-
-    
-
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+        
+    </script>
 
 </body>
 </html>
