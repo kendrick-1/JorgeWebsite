@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="JCS Template.css">
+  <link rel="stylesheet" href="">  
+</head>
+<body>
+    <div class="header">
+        <div onclick="openNav()" style="cursor: pointer;">
+            <img src="Menu Icon.png" alt="Menu Icon" style="margin-left: 10px;">
+        </div>
+        <img src="Left Line.png" alt="Left Line" class="L-Line">
+        <img src="Logo.png" alt="Logo" style="margin: 0 auto;">
+        <img src="Right Line.png" alt="Right Line" class="R-Line">
+        <img src="Profile Icon.png" alt="Profile Icon" style="margin-right: 10px;">
+    </div>
+      
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Home.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Gallery-1.html">Gallery</a>
+        <a href="Locations.html">Locations</a>
+        <a href="Forms.html">Forms</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="review_proj.html">Reviews</a>
+		<a href="Contact Us.html">Contact Us</a>
+        <a href="FAQs.html">FAQs</a>
+    </div>
+        
+        <div id="main">
+            <div class="container">
+                <div class="title">
+                    <img src="Golden Border.png">
+                    <h1>WE VALUE YOUR FEEDBACK</h1>
+                    <img src="Golden Border.png">
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedbackType" class="form-label">Feedback Type</label>
+                        <select class="form-select" id="feedbackType" required>
+                            <option value="">Select a type</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="inquiry">Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                                <div class="mb-3">
+                        <label for="foodQuality" class="form-label">Food Quality</label>
+                        <select class="form-select" id="foodQuality" required>
+                            <option value="">Select an option</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                            <option value="dissatisfied">Dissatisfied</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="overallExperience" class="form-label">Overall Experience</label>
+                        <select class="form-select" id="overallExperience" required>
+                            <option value="">Select an option</option>
+                            <option value="excellent">Excellent</option>
+                            <option value="good">Good</option>
+                            <option value="average">Average</option>
+                            <option value="dissatisfied">Dissatisfied</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="feedback" class="form-label">Your Feedback</label>
+                        <textarea class="form-control" id="feedback" rows="4" placeholder="Write your feedback here..." required></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-submit w-100">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+  
+    <footer class="footer mt-5" style="padding: 10px 0;">
+    <div style="text-align: center; margin-bottom: 10px;">
+        <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; font-size: 14px;">
+            <li><a href="Home.html" style="color: #fff;">Home</a></li>
+            <li><a href="About Us.html" style="color: #fff;">About Us</a></li>
+            <li><a href="Menu.html" style="color: #fff;">Menu</a></li>
+            <li><a href="Gallery-1.html" style="color: #fff;">Gallery</a></li>          
+            <li><a href="Locations.html" style="color: #fff;">Locations</a></li>
+            <li><a href="Forms.html" style="color: #fff;">Form</a></li>
+            <li><a href="Feedback.h	tml" style="color: #fff;">Feedback</a></li>
+            <li><a href="Reviews.html" style="color: #fff;">Reviews</a></li>
+            <li><a href="Contact Us.html" style="color: #fff;">Contact Us</a></li>
+            <li><a href="FAQs.html" style="color: #fff;">FAQs</a></li>
+        </ul>
+    </div>
+    
+        <div style="color: #f4f2f2; font-size: 14px; margin-bottom: 5px;">
+            <p><b>Website developed by:</b> Alexa Andrea V. Bermudez |Lupo Jehoiakim Candari| Ken Frederick Duren | George Michael Ilagan | Pierre Martin A. Papa | Aniecon Ramos</p>
+        </div>
+    
+        <div style="color: #fff; font-size: 14px;">
+            <p>&copy; 2025 Jorge's Casa De Sans Rival. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+</body>
+</html>
+    
