@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .blue-bg {
+            background-color: #d1e5f4;
+        }
+        .white-bg {
+            background-color: white;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+            margin: 20px auto;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .flip-card-front {
+            z-index: 2;
+            background-size: cover;
+            background-position: center;
+			color: white;
+			font-size: 20px;
+			
+        }
+        .flip-card-back {
+            background: white;
+            transform: rotateY(180deg);
+        }
+        .flip-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+		
+		 .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+			
+        }
+        .image-container img {
+            width: 200px;
+            height: 270px;
+            border-radius: 15px;
+            object-fit: cover;
+			
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section blue-bg">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('jorge_1.jpg');">
+                    <img src="review_2.jpg" alt="Profile Picture">
+                    <p><b>Cams Rbls</b> recommends <b>Jorge's Casa De Sans Rival</b> - Lipa.</p>
+                </div>
+                <div class="flip-card-back">
+                    <p><i>"Super masarap po sya both ung sansrival cake and silvana hindi sya masyado matamis kaya nagustuhan talaga namin hindi nakakaumay. ☺️"</i></p>
+                </div>
+            </div>
+        </div>
+    
+        <br><br>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('Jorge_2.jpg');">
+                    <img src="review_1.jpg" alt="Profile Picture">
+                    <p><b>Cams Rbls</b> recommends <b>Jorge's Casa De Sans Rival</b> - Lipa.</p>
+                </div>
+                <div class="flip-card-back">
+                    <p><i>"Newest favorite cake ng buong family namin! ❤️❤️❤️ Hindi sya gaanong matamis kaya hindi nakakaumay. Na-try na namin halos lahat ng flavors. 😁"</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section white-bg">
+	</br>
+	</br>
+	
+	 
+        <div class="image-container">
+            <img src="jorge_1.jpg" alt="Review 2" style="box-shadow: 10px 10px 5px lightblue inset;">
+            <img src="Jorge_6.jpg" alt="Review 1" style="box-shadow: 10px 10px 5px lightblue inset;">
+            <img src="Jorge_7.jpg" alt="Review 3" style="box-shadow: 10px 10px 5px lightblue inset;">
+            <img src="Jorge_8.jpg" alt="Review 4" style="box-shadow: 0px 20px 20px lightblue inset;">
+        </div>
+   
+	</br>
+	</br>
+	
+        <p style="font-size: 100px; color: #d1e5f4; margin-top: -15px;"><b>Satisfaction</b></p1>
+        <p style="font-size: 50px; margin-top: -80px;">⭐⭐⭐⭐⭐</p>
+        <p style="Courier New, monospace; font-size: 20px;">Jorge's Casa de Sans Rival goes above and beyond to prioritize customer satisfaction, ensuring every order is handled with care and excellence.</p>
+    </div>
+
+    <div class="section blue-bg">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('Jorge_3.jpg');">
+                    <img src="review_3.jpg" alt="Profile Picture">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p><b>Ericel</b></p>
+                </div>
+                <div class="flip-card-back">
+                    <p><i>"Made sure they attend to your request. They are very good for that ❤️"</i></p>
+                </div>
+            </div>
+        </div>
+    
+        <br><br>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url('Jorge_4.jpg');">
+                    <img src="review_3.jpg" alt="Profile Picture">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p><b>Lyzcette</b></p>
+                </div>
+                <div class="flip-card-back">
+                    <p><i>"Masarap po hindi ganon katamis 🥰"</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

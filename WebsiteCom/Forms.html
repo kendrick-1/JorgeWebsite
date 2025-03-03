@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="JCS Template.css">
+  <link rel="stylesheet" href="Forms style.css">
+</head>
+<body>
+    <div class="header">
+        <div onclick="openNav()" style="cursor: pointer;">
+            <img src="Menu Icon.png" alt="Menu Icon" style="margin-left: 10px;">
+        </div>
+        <img src="Left Line.png" alt="Left Line" class="L-Line">
+        <img src="Logo.png" alt="Logo" style="margin: 0 auto;">
+        <img src="Right Line.png" alt="Right Line" class="R-Line">
+        <img src="Profile Icon.png" alt="Profile Icon" style="margin-right: 10px;">
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Home.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="#">Team</a>
+        <a href="Locations.html">Locations</a>
+        <a href="Forms.html">Forms</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="#">Reviews</a>
+        <a href="FAQs.html">FAQs</a>
+    </div>
+
+    <div id="main">
+        <div class="title">
+            <img src="Golden Border.png">
+            <h1>ORDER FORMS</h1>
+            <img src="Golden Border.png">
+        </div>
+        <div class="container form-container">
+            </br>
+            </br>
+            <form>
+                <fieldset class="fieldset">
+                    <legend class="legend">Reservation Details</legend>
+                    <label class="label" for="date">Date of Pick-up/Delivery</label>
+                    <input class="input form-control" type="date" id="date" name="date" required>
+                    
+                    <label class="label" for="time">Time</label>
+                    <input class="input form-control" type="time" id="time" name="time" required>
+                </fieldset>
+                
+                <fieldset class="fieldset">
+                    <legend class="legend">Personal Information</legend>
+                    <label class="label" for="name">Full Name</label>
+                    <input class="input form-control" type="text" id="name" name="name" required>
+                    
+                    <label class="label" for="address">Address with Landmark</label>
+                    <textarea class="input form-control" id="address" name="address" rows="3" required></textarea>
+                    
+                    <label class="label" for="contact">Contact Number</label>
+                    <input class="input form-control" type="tel" id="contact" name="contact" required>
+                </fieldset>
+                
+                <fieldset class="fieldset">
+                    <legend class="legend">Order Details</legend>
+                    <label class="label" for="order">Order</label>
+                    <input class="input form-control" type="text" id="order" name="order" required>
+                    
+                    <label class="label" for="payment">Mode of Payment</label>
+                    <select class="input form-control" id="payment" name="payment" required>
+                        <option value="cash">Cash</option>
+                        <option value="gcash">Gcash</option>
+                        <option value="maya">Maya</option>
+                    </select>
+                </fieldset>
+                </br>
+                </br>
+                <button class="button btn btn-primary" type="submit">Submit Reservation</button>
+                <button class="button btn btn-secondary" type="reset">Clear</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer mt-5">
+        <div>&copy; 2025 Jorge's Casa De Sans Rival. All Rights Reserved.</div>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>
