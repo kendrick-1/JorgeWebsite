@@ -2,46 +2,24 @@ body {
    font-family: 'Arial', sans-serif;
    margin: 0;
    padding: 0;
-   background-color: #f4f4f4;
 }
 
-
-
-
-.header {
-   background-color: #6bb9cc;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 70px;
-}
-
-
-.header img {
-   width: 70px;
-   height: 70px;
-}
-
-
-.header .L-Line, .header .R-Line {
+.L-Line, .R-Line {
  width: 500px;
  height: 150px;
  margin: 0 auto;
  overflow-y: hidden;
 }
 
-
 #main {
    transition: margin-left .5s;
    padding: 20px;
 }
 
-
 @media screen and (max-height: 450px) {
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
 }
-
 
 .footer {
    margin-top: 30px;
@@ -51,7 +29,6 @@ body {
    text-align: center;
    clear: both;
 }
-
 
 .title {
    width: 30%;
@@ -63,7 +40,6 @@ body {
    display: flex;
 }
 
-
 .title h1 {
    text-align: center;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -73,23 +49,19 @@ body {
    padding-right: 20px;
 }
 
-
 .title img {
    width: 100%;
    height: auto;
 }
-
 
 .section {
    padding: 40px;
    text-align: center;
 }
 
-
 .white-bg {
    background-color: white;
 }
-
 
 .flip-card-container {
    display: flex;
@@ -97,14 +69,13 @@ body {
    gap: 30px;
    background-color: white;
    padding: 40px 0;
-   flex-wrap: wrap; /* Changed from nowrap to wrap for better responsiveness */
+   flex-wrap: wrap;
 }
-
 
 .card {
    background-color: #fff;
    width: 280px;
-   height: 350px;
+   height: auto;
    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
    border: 1px solid black;
    border-radius: 12px;
@@ -114,13 +85,14 @@ body {
    justify-content: center;
    padding: 20px;
    transition: box-shadow 0.3s ease-in-out;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   text-align: center;
 }
-
 
 .card:hover {
    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
-
 
 .card img {
    width: 80px;
@@ -131,13 +103,14 @@ body {
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-
 .card p {
    font-size: 18px;
    color: #333;
    margin: 10px 0;
+   text-align: center;
+   white-space: normal;
+   max-width: 90%;
 }
-
 
 .satisfaction-text {
    font-size: 48px;
@@ -146,20 +119,20 @@ body {
    font-weight: bold;
 }
 
-
 .star-rating {
    font-size: 30px;
    color: #ff9900;
 }
-
 
 .review-description {
    font-family: 'Courier New', Courier, monospace;
    font-size: 18px;
    line-height: 1.5;
    color: #333;
+   text-align: center;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
 }
-
 
 @media screen and (max-width: 768px) {
    .flip-card-container {
@@ -167,50 +140,30 @@ body {
        align-items: center;
    }
 
-
    .card {
        width: 100%;
        height: auto;
        margin-bottom: 20px;
    }
 
-
-   .header img {
-       width: 50px;
-       height: 50px;
-   }
-
-
    .footer {
        padding: 10px;
        font-size: 12px;
    }
-
 
    .review-description {
        font-size: 16px;
    }
 }
 
-
 @media screen and (max-width: 480px) {
-   .header {
-       flex-direction: column;
-       align-items: center;
-       height: auto;
-       padding: 10px 0;
-   }
-
-
    .sidenav a {
        font-size: 18px;
    }
 
-
    .satisfaction-text {
        font-size: 32px;
    }
-
 
    .card img {
        width: 60px;
