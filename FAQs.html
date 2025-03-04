@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FAQs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="JCS Template.css">
+  <link rel="stylesheet" href="FAQs style.css">
+</head>
+<body>
+    <div class="header">
+        <div onclick="openNav()" style="cursor: pointer;">
+            <img src="Menu Icon.png" alt="Menu Icon" style="margin-left: 10px;">
+        </div>
+        <img src="Left Line.png" alt="Left Line" class="L-Line">
+        <img src="Logo.png" alt="Logo" style="margin: 0 auto;">
+        <img src="Right Line.png" alt="Right Line" class="R-Line">
+        <img src="Profile Icon.png" alt="Profile Icon" style="margin-right: 10px;">
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Gallery-1.html">Gallery</a>
+        <a href="Locations.html">Locations</a>
+        <a href="Forms.html">Forms</a>
+        <a href="Feedback.html">Feedback</a>
+        <a href="Reviews.html">Reviews</a>
+		<a href="Contact Us.html">Contact Us</a>
+        <a href="FAQs.html">FAQs</a>
+    </div>
+
+    <div id="main">
+        <div class="title">
+            <img src="Golden Border.png">
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <img src="Golden Border.png">
+        </div>
+        <br>
+        <div class="container mt-5 faq-list bg-white text-dark">
+            <button type="button" class="collapsible">Is Sans Rival and Silvanas the same?</button>
+                <div class="content">
+                    <br>
+                    <p>Silvanas are the bite-sized version of our Sans Rival.</p>
+                </div>
+            <br>
+            <button type="button" class="collapsible">What’s the shelf life of Sans Rival?</button>
+                <div class="content">
+                    <br>
+                    <p>Sans Rival and Silvanas should be kept frozen or refrigerated. They will last up to 3 weeks in the chiller and 1 month in the freezer.</p>
+                </div>
+            <br>
+            <button type="button" class="collapsible">Are you open to franchising?</button>
+                <div class="content">
+                    <br>
+                    <p>As of the moment, we are not yet open to franchising as we are still in the process of improving our system.</p>
+                </div>
+            <br>
+            <button type="button" class="collapsible">Do you have a store in Manila?</button>
+                <div class="content">
+                    <br>
+                    <p>No, we don’t have a store in Manila as of now, but we are looking forward to putting up a store in the future.</p>
+                </div>
+            <br>
+            <button type="button" class="collapsible">Are you using real nuts?</button>
+                <div class="content">
+                    <br>
+                    <p>Yes, we are using 100% real nuts.</p>
+                </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5" style="padding: 10px 0;">
+    <div style="text-align: center; margin-bottom: 10px;">
+        <ul style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; font-size: 14px;">
+            <li><a href="index.html" style="color: #fff;">Home</a></li>
+            <li><a href="About Us.html" style="color: #fff;">About Us</a></li>
+            <li><a href="Menu.html" style="color: #fff;">Menu</a></li>
+            <li><a href="Gallery-1.html" style="color: #fff;">Gallery</a></li>          
+            <li><a href="Locations.html" style="color: #fff;">Locations</a></li>
+            <li><a href="Forms.html" style="color: #fff;">Form</a></li>
+            <li><a href="Feedback.html" style="color: #fff;">Feedback</a></li>
+            <li><a href="Reviews.html" style="color: #fff;">Reviews</a></li>
+            <li><a href="Contact Us.html" style="color: #fff;">Contact Us</a></li>
+            <li><a href="FAQs.html" style="color: #fff;">FAQs</a></li>
+        </ul>
+    </div>
+    
+        <div style="color: #f4f2f2; font-size: 14px; margin-bottom: 5px;">
+            <p><b>Website developed by:</b> Alexa Andrea V. Bermudez |Lupo Jehoiakim Candari| Ken Frederick Duren | George Michael Ilagan | Pierre Martin A. Papa | Aniecon Ramos</p>
+        </div>
+    
+        <div style="color: #fff; font-size: 14px;">
+            <p>&copy; 2025 Jorge's Casa De Sans Rival. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
+
